@@ -1,7 +1,7 @@
 import java.security.SecureRandom;
 public class Q11 {
     public static void main(String[] args) {
-        int[] possibleSumTally = new int[37];
+        int[] possibleSumTally = new int[13];
         double[] sumTallyPercentages = new double[13];
         double totalTallySum = 0;
         int sum = 0;
@@ -29,9 +29,9 @@ public class Q11 {
             sumTallyPercentages[i] = (possibleSumTally[i]/totalTallySum) * 100;
         }
 
-        for (int i = 2; i < 37; i++) {
+        for (int i = 2; i < 13; i++) {
             if (possibleSumTally[i] != 0) {
-                 System.out.printf("%-3d %12d %15f%n", i, possibleSumTally[i], sumTallyPercentages[i]);
+                 System.out.printf("%-3d %12d %15.0f%n", i, possibleSumTally[i], sumTallyPercentages[i]);
             }
            
         }

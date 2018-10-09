@@ -20,14 +20,14 @@ public class Q7 {
         }
 
         //d
-         for (int i = 0; i < alpha.length; i++) {
+        for (int i = 0; i < alpha.length; i++) {
             for (int j = 0; j < alpha[0].length; j++) {
                 if (j == 0) //If we're in the first coumn
                     alpha[i][j] = 5;
                 else
                     alpha[i][j] = 2*alpha[i][j-1];
             }
-        } 
+        }
 
         //e - Print array alpha one row per line
         for (int i = 0; i < alpha.length; i++) {
@@ -40,16 +40,16 @@ public class Q7 {
         //f - Print array alpha one column per line
         int row = 0;
         int col = 0;
-        while (col < alpha.length) {
-            while (row < alhpa[row].length) {
-                System.out.print(alpha[row][col] + " ");
+        while (col < alpha[row].length) {
+            while (row < alpha.length) {
+                System.out.printf("%-7d ",alpha[row][col]);
                 row++;
             }
             row = 0;
             col++;
             System.out.println();
         }
-    
+
 
 
     }
