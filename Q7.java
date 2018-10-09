@@ -38,12 +38,18 @@ public class Q7 {
         }
 
         //f - Print array alpha one column per line
-        int j = 0;
-        for (int i = 0; i < alpha.length; i++) {
-            while (j )
-                System.out.print(alpha[i][j] + " ");
+        int row = 0;
+        int col = 0;
+        while (col < alpha.length) {
+            while (row < alhpa[row].length) {
+                System.out.print(alpha[row][col] + " ");
+                row++;
+            }
+            row = 0;
+            col++;
             System.out.println();
         }
+    
 
 
     }
